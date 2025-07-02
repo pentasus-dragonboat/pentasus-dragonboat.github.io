@@ -15,8 +15,8 @@ const AdminSection: React.FC<AdminSectionProps> = ({ adminTeam, siteData }) => {
       siteData={siteData}
       sectionType="admin"
       colorTheme="green"
-      title="Admin Team"
-      subtitle="Meet the dedicated professionals who guide our operations and ensure our success."
+      title="Admin and Logistics Team"
+      subtitle="Meet the professionals who ensure our success."
       sectionId="admin"
       decorativeTheme="secondary"
     />

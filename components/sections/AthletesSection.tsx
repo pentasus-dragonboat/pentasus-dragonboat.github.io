@@ -15,8 +15,8 @@ const AthletesSection: React.FC<AthletesSectionProps> = ({ teamMembers, siteData
       siteData={siteData}
       sectionType="athletes"
       colorTheme="blue"
-      title="Our Athletes"
-      subtitle="Meet our dedicated athletes who embody our pursuit of excellence on the water."
+      title="Our Family"
+      subtitle="Meet our family members on the water."
       sectionId="athletes"
       decorativeTheme="primary"
     />

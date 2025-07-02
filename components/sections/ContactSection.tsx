@@ -133,10 +133,10 @@ const ContactSection: React.FC<ContactSectionProps> = ({
         {/* Aligned header section */}
         <div className="text-center mb-24 relative">
           <h2 className={getAlignedTitleClasses()}>
-            Join Our Journey
+            Join Us
           </h2>
           <p className={getAlignedSubtitleClasses()}>
-            Connect with us and become part of our pursuit of excellence on the water.
+            Join us and become part of our journey on the water.
           </p>
         </div>
         

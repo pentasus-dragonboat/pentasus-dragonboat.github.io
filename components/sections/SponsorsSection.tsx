@@ -177,7 +177,7 @@ const SponsorsSection: React.FC<SponsorsSectionProps> = ({ sponsors, isMinimalis
           
           <h2 className={titleClasses}>Our Partners</h2>
           <p className={subtitleClasses}>
-            Trusted organizations that believe in our mission and support our pursuit of excellence.
+            Trusted organizations that believe in our mission.
           </p>
         </div>
         
