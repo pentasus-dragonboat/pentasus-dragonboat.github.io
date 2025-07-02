@@ -1,52 +1,91 @@
 # PENTASUS Dragon Boat Team Website
 
 
+## Project Structure
 
 ```plaintext
 pentasus-dragon-boat/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml              # (Optional) GitHub Actions for auto-deployment
+│       └── deploy.yml
 ├── components/
-│   ├── Navigation.tsx              # Navigation bar component
-│   ├── HeroSection.tsx            # Hero/landing section
-│   ├── AthletesSection.tsx        # Team members display
-│   ├── AdminSection.tsx           # Admin team display
-│   ├── NewsSection.tsx            # News articles grid
-│   ├── NewsModal.tsx              # News detail modal
-│   ├── SponsorsSection.tsx        # Sponsors grid
-│   ├── ContactSection.tsx         # Contact/CTA section
-│   └── Footer.tsx                 # Footer component
-├── content/
+│   ├── common/                          
+│   │   ├── ProfileSection/
+│   │   │   ├── ProfileSection.tsx      
+│   │   │   └── ProfileCard.tsx         
+│   │   ├── SectionHeader/
+│   │   │   ├── SectionHeader.tsx       
+│   │   │   └── DecorativeShapes.tsx    
+│   │   ├── SmartImage/
+│   │   │   ├── SmartProfileImage.tsx  
+│   │   │   └── index.ts               
+│   │   ├── DevTools/
+│   │   │   └── DevTools.tsx            
+│   │   └── index.ts                    
+│   ├── modals/                         
+│   │   ├── ImageModal.tsx              
+│   │   └── NewsModal.tsx               
+│   ├── sections/                       
+│   │   ├── AthletesSection.tsx         
+│   │   └── AdminSection.tsx            
+│   ├── Navigation.tsx                 
+│   ├── HeroSection.tsx               
+│   ├── NewsSection.tsx                 
+│   ├── SponsorsSection.tsx             
+│   ├── ContactSection.tsx            
+│   ├── Footer.tsx                      
+│   └── Logo.tsx                      
+├── content/                           
 │   ├── news/
-│   │   ├── 2024-12-15-regional-championship.md
-│   │   ├── 2024-11-28-elite-training.md
-│   │   └── 2024-11-10-partnership.md
-│   ├── team.yml                  # Athletes data
-│   ├── admin.yml                 # Admin team data
-│   ├── site.yml                 
-│   └── sponsors.yml              # Sponsors data
+│   │   ├── 2025-01-10-partnership-expansion.md
+│   │   ├── 2025-02-15-championship-victory.md
+│   │   └── 2025-11-28-elite-training-program.md
+│   ├── team.yml
+│   ├── admin.yml
+│   ├── site.yml
+│   └── sponsors.yml
 ├── lib/
-│   ├── markdown.ts               # Markdown processing utility
-│   └── content.ts                # Content loading functions
+│   ├── content/                        
+│   │   ├── types.ts                    
+│   │   ├── loaders.ts                  
+│   │   ├── processors.ts               
+│   │   ├── siteConfig.ts               
+│   │   └── index.ts                    
+│   ├── theme/                        
+│   │   ├── detection.ts                
+│   │   ├── styles.ts                   
+│   │   ├── layout.ts                 
+│   │   └── index.ts                    
+│   ├── utils/                         
+│   │   ├── image.ts                    
+│   │   ├── profile.ts                  
+│   │   ├── formatting.ts              
+│   │   └── index.ts                    
+│   └── markdown.ts                     
 ├── pages/
-│   ├── _app.tsx                  # Next.js app wrapper
-│   └── index.tsx                 # Main homepage
-├── public/
-│   ├── images/                
-│   │   ├── alumni             # universities logo on the bottom, fudan.png, tongji.png, shanghaicai.png
-│   │   ├── hero              
-│   │   └── news
-│   └── .nojekyll                 # GitHub Pages Jekyll bypass
-├── styles/
-│   └── globals.css               # Global Tailwind CSS styles
-├── .gitignore                    # Git ignore file
-├── next.config.js                # Next.js configuration
-├── next-env.d.ts
-├── package.json                  # NPM dependencies & scripts
-├── tailwind.config.js            # Tailwind CSS configuration
-├── postcss.config.js
-└── tsconfig.json                 # TypeScript configuration
+│   ├── news/
+│   │   └── [slug].tsx                  
+│   ├── _app.tsx                        
+│   └── index.tsx                       
+├── public/                            
+│   └── images/
+│       ├── alumni/
+│       ├── hero/
+│       └── news/
+├── styles/                             
+│   └── globals.css
+├── config/                             
+│   └── styling.yml                     
+├── .gitignore                          
+├── .nojekyll                         
+├── LICENSE                          
+├── next.config.js                    
+├── next-env.d.ts                       
+├── package.json                       
+├── package-lock.json                   
+├── postcss.config.js                  
+├── tailwind.config.js                  
+└── tsconfig.json                       
 ```
 
 ## Quick Start
@@ -152,23 +191,6 @@ npm run deploy   # Build and deploy to GitHub Pages
 
 3. **Enable GitHub Pages** in repository settings pointing to `gh-pages` branch.
 
-## Project Structure
-
-```
-pentasus-dragon-boat/
-├── components/          # React components
-├── content/            # Content files (YAML/Markdown)
-│   ├── news/          # News articles
-│   ├── team.yml       # Athletes data
-│   ├── admin.yml      # Admin team data
-│   ├── site.yml       # Site configuration
-│   └── sponsors.yml   # Sponsors data
-├── lib/               # Utilities and content loading
-├── pages/             # Next.js pages
-├── public/            # Static assets
-├── styles/            # Global styles
-└── utils/             # Helper functions
-```
 
 ## Adding Content
 

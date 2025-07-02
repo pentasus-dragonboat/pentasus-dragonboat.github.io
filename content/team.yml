@@ -67,7 +67,20 @@
     mouth: variant17
     skinColor: ecad80
 
-
+- id: 5
+  name: Gong
+  role: Engine in black
+  image: "/images/family/gong.png"
+  motto: "Expelliarmus!"
+  dicebear:
+    avatar: Alice
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long18
+    glasses: variant02
+    glassesProbability: 0
+    mouth: variant17
+    skinColor: ecad80
 
 - id: 5
   name: 乐乐
@@ -119,7 +132,7 @@
   name: Yang Liu
   role: Captain, Blitz Turbo, U-Turn Steerer
   image: "/images/athletes/yang.jpg"
-  motto: "不和任何人比，划出我们自己最好的样子"
+  motto: "么么哒"
   dicebear:
     avatar: Sawyer
     avatarBg: fd79a8  
