@@ -4,7 +4,7 @@
 - id: 1
   name: Yang Liu
   role: Captain
-  image: "/images/athletes/yang.jpg"
+  image: ""
   motto: "么么哒"
   dicebear:
     avatar: Sawyer
@@ -21,7 +21,7 @@
   name: Mushroom
   role: Co-Captain
   motto: ""
-  image: "/images/athletes/james.jpg"
+  image: ""
   dicebear:
     avatar: Nancy
     avatarBg: 81ecec
@@ -50,7 +50,7 @@
 - id: 4
   name: Bowen
   role: Coach
-  image: "/images/admin/sophie.jpg"
+  image: ""
   dicebear:
     avatar: Bowen
     avatarBg: a29bfe
@@ -66,7 +66,7 @@
 - id: 5
   name: Cong
   role: Coach
-  image: "/images/admin/david.jpg"
+  image: ""
   motto: "N/A"
   dicebear:
     avatar: David
@@ -113,7 +113,7 @@
 - id: 8
   name: Nina
   role: Logistics Coordinator
-  image: "/images/admin/ryan.jpg"
+  image: ""
   motto: "N/A"
   dicebear:
     avatar: Jessica
@@ -144,7 +144,7 @@
 - id: 10
   name: 老陆
   role: Where-Am-I Coordinator
-  image: "/images/admin/laolu.jpg"
+  image: ""
   motto: "N/A"
   dicebear:
     avatar: max
