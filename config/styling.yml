@@ -1,0 +1,107 @@
+# config/styling.yml - Centralized styling configuration
+# This file centralizes all styling decisions to reduce code complexity
+
+themes:
+  minimalist:
+    typography:
+      # Title weights
+      title_large: "font-thin"
+      title_medium: "font-light" 
+      title_small: "font-light"
+      # Body text
+      subtitle: "font-light"
+      body: "font-light"
+      # Interactive elements
+      button: "font-medium"
+      pill: "font-medium"
+    borders:
+      thickness: 1
+      radius: "rounded-lg"
+      style: "border-gray-200"
+    shadows: 
+      default: "shadow-md"
+      hover: "shadow-lg"
+    colors:
+      text_primary: "text-black"
+      text_secondary: "text-gray-600"
+      text_body: "text-gray-600"
+    spacing:
+      section_padding: "py-32"
+      card_gap: "gap-8 lg:gap-12"
+
+  cartoon:
+    typography:
+      # Title weights
+      title_large: "font-black"
+      title_medium: "font-black"
+      title_small: "font-bold"
+      # Body text  
+      subtitle: "font-bold"
+      body: "font-semibold"
+      # Interactive elements
+      button: "font-bold"
+      pill: "font-bold"
+    borders:
+      thickness: 4
+      radius: "rounded-lg"
+      style: "border-black"
+    shadows:
+      default: "shadow-lg"
+      hover: "shadow-xl"
+    colors:
+      text_primary: "text-black"
+      text_secondary: "text-gray-800"
+      text_body: "text-gray-700"
+    spacing:
+      section_padding: "py-32"
+      card_gap: "gap-6 lg:gap-8"
+
+# Role color themes
+role_colors:
+  athlete: "blue"    # For athletes section
+  admin: "green"     # For admin section
+  featured: "purple" # For featured content
+  accent: "red"      # For special highlights
+
+# Section background patterns
+section_backgrounds:
+  minimalist:
+    primary: "bg-white/90 backdrop-blur-sm"
+    secondary: "bg-gray-50/90 backdrop-blur-sm"
+    tertiary: "bg-gray-100/90 backdrop-blur-sm"
+    quaternary: "bg-white/95 backdrop-blur-sm"
+  cartoon:
+    primary: "bg-gradient-to-b from-yellow-100 to-pink-100"
+    secondary: "bg-gradient-to-b from-pink-100 to-blue-100"
+    tertiary: "bg-gradient-to-b from-blue-100 to-yellow-100"
+    quaternary: "bg-gradient-to-b from-pink-100 to-yellow-100"
+
+# Decorative elements for cartoon mode
+decorative_shapes:
+  primary:
+    left: "w-16 h-16 bg-yellow-300 rounded-full opacity-20 blur-xl animate-pulse"
+    right: "w-12 h-12 bg-pink-300 rounded-full opacity-25 blur-lg animate-pulse"
+  secondary:
+    left: "w-16 h-16 bg-pink-300 rounded-full opacity-20 blur-xl animate-pulse"
+    right: "w-12 h-12 bg-blue-300 rounded-full opacity-25 blur-lg animate-pulse"
+  tertiary:
+    left: "w-16 h-16 bg-blue-300 rounded-full opacity-20 blur-xl animate-pulse"
+    right: "w-12 h-12 bg-yellow-300 rounded-full opacity-25 blur-lg animate-pulse"
+  quaternary:
+    left: "w-16 h-16 bg-purple-300 rounded-full opacity-20 blur-xl animate-pulse"
+    right: "w-12 h-12 bg-green-300 rounded-full opacity-25 blur-lg animate-pulse"
+
+# Grid layouts for different member counts
+grid_layouts:
+  1: "flex justify-center"
+  2: "grid grid-cols-2 gap-8 lg:gap-12 justify-center max-w-2xl mx-auto"
+  3: "grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 justify-center max-w-4xl mx-auto"
+  4: "grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 justify-center max-w-5xl mx-auto"
+  5_6: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8 justify-center max-w-7xl mx-auto"
+  7_plus: "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8 max-w-7xl mx-auto"
+
+# Development settings
+development:
+  show_theme_indicator: true
+  show_image_stats: true
+  show_debug_info: true

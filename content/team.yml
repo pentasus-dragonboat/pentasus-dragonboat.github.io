@@ -1,0 +1,179 @@
+# content/team.yml - Enhanced with Hybrid Image Support
+# Supports up to 6 athletes in horizontal layout with flexible image options
+
+# content/admin.yml - Enhanced with Hybrid Image Support
+# Supports both local images and DiceBear with intelligent fallback
+
+
+
+
+- id: 1
+  name: Annie
+  role: Agile Pacer
+  motto: "N/A"
+  dicebear:
+    avatar: Lily
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long13
+    glasses: variant02
+    glassesProbability: 0
+    mouth: variant17
+    skinColor: ecad80
+
+- id: 2
+  name: Bowen
+  role: Power Engine
+  image: "/images/admin/sophie.jpg"
+  dicebear:
+    avatar: Bowen
+    avatarBg: a29bfe
+    avatarEyes: 00b894
+    hair: long11
+    glasses: variant02
+    glassesProbability: 80
+    mouth: variant17
+    skinColor: ecad80
+  motto: "N/A"
+
+
+- id: 3
+  name: Cong
+  role: Quantum Engine
+  image: "/images/admin/david.jpg"
+  motto: "N/A"
+  dicebear:
+    avatar: David
+    avatarBg: 55a3ff
+    avatarEyes: fd79a8
+    hair: short02
+    glasses: variant01
+    glassesProbability: 0
+    mouth: variant17
+    skinColor: ecad80
+
+
+- id: 4
+  name: 桂桂
+  role: Happy-Go-Lucky Pacer
+  motto: "N/A"
+  dicebear:
+    avatar: Alice
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long18
+    glasses: variant02
+    glassesProbability: 0
+    mouth: variant17
+    skinColor: ecad80
+
+
+
+- id: 5
+  name: 乐乐
+  role: Jolly Turbo
+  motto: "N/A"
+  dicebear:
+    avatar: happy
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long22
+    glasses: variant02
+    glassesProbability: 0
+    mouth: variant17
+    skinColor: ecad80
+
+
+- id: 6
+  name: Mushroom
+  role: Co-Captain, Yay Turbo
+  motto: ""
+  image: "/images/athletes/james.jpg"
+  dicebear:
+    avatar: Nancy
+    avatarBg: 81ecec
+    avatarEyes: e17055
+    hair: long01
+    accessories: variant05
+    accessoriesProbability: 60
+    clothing: variant08
+    clothingColor: 2563eb
+
+
+- id: 7
+  name: Nina
+  role: Bunny-Hop Pacer
+  image: "/images/admin/ryan.jpg"
+  motto: "N/A"
+  dicebear:
+    avatar: Jessica
+    avatarBg: a29bfe
+    avatarEyes: 00cec9
+    hair: long20
+    glasses: variant03
+    glassesProbability: 0
+    clothing: variant07
+    clothingColor: 8b5cf6
+  
+- id: 8
+  name: Yang Liu
+  role: Captain, Blitz Turbo, U-Turn Steerer
+  image: "/images/athletes/yang.jpg"
+  motto: "不和任何人比，划出我们自己最好的样子"
+  dicebear:
+    avatar: Sawyer
+    avatarBg: fd79a8  
+    avatarEyes: a29bfe
+    hair: long15
+    glasses: variant02
+    glassesProbability: 100
+    mouth: variant17
+    skinColor: ecad80
+ 
+
+
+- id: 9
+  name: Zhe
+  role: Dr Pacer
+  motto: "N/A"
+  dicebear:
+    avatar: Emmily
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long20
+    accessories: variant01
+    accessoriesProbability: 80
+    clothing: variant08
+    clothingColor: 2563eb
+  
+- id: 10
+  name: 老陆
+  role: Coffee-Powered Engine
+  image: "/images/admin/laolu.jpg"
+  motto: "N/A"
+  dicebear:
+    avatar: max
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: short01
+    glasses: variant05
+    glassesProbability: 80
+    mouth: variant17
+    skinColor: ecad80
+
+
+# DiceBear Fallback Options:
+# - All athletes should have DiceBear fallback configured
+# - Enhanced v9.x options for better variety and professionalism
+# - Common options:
+    # avatar: David
+    # avatarBg: 55a3ff
+    # avatarEyes: fd79a8
+#   hair: short01-short20, long01-long20
+#   beard: variant01-variant05 (with beardProbability)
+#   glasses: variant01-variant05 (with glassesProbability)
+#   clothing: variant01-variant15
+#   accessories: variant01-variant05 (with accessoriesProbability)
+#   mouth: variant01-variant20
+#   skinColor: hex color (no #)
+#   clothingColor: hex color (no #)
