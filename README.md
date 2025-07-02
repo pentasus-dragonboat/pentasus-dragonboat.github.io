@@ -142,7 +142,7 @@ npm run deploy   # Build and deploy to GitHub Pages
 
 1. **Update `next.config.js`** with your repo name:
    ```js
-   const repo = 'your-repo-name';
+   const repo = 'pentasus-dragonboat.github.io';
    ```
 
 2. **Deploy**:
