@@ -136,7 +136,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
             Join Us
           </h2>
           <p className={getAlignedSubtitleClasses()}>
-            Join us and become part of our journey on the water.
+            都划到这儿了，还没下决心么？来试训一次吧！
           </p>
         </div>
         
