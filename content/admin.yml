@@ -141,17 +141,21 @@
     clothingColor: 2563eb
   
 
-- id: 10
+- id: 11
   name: 老陆
-  role: Where-Am-I Coordinator
+  role: Coffee-Powered Engine
   image: ""
-  motto: "N/A"
+  motto: "搞"
   dicebear:
-    avatar: max
+    avatar: Caleb
     avatarBg: fd79a8
     avatarEyes: 74b9ff
-    hair: short01
+    hair: long03
+    hairColor: cb6820
+    beard: variant05
     glasses: variant05
+    clothing: variant10
     glassesProbability: 80
-    mouth: variant17
+    mouth: variant19
     skinColor: ecad80
+    backgroundColor: c0aede

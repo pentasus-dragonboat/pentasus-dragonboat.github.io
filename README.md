@@ -1,92 +1,11 @@
 # PENTASUS Dragon Boat Team Website
 
 
-## Project Structure
-
-```plaintext
-pentasus-dragon-boat/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-├── components/
-│   ├── common/                          
-│   │   ├── ProfileSection/
-│   │   │   ├── ProfileSection.tsx      
-│   │   │   └── ProfileCard.tsx         
-│   │   ├── SectionHeader/
-│   │   │   ├── SectionHeader.tsx       
-│   │   │   └── DecorativeShapes.tsx    
-│   │   ├── SmartImage/
-│   │   │   ├── SmartProfileImage.tsx  
-│   │   │   └── index.ts               
-│   │   ├── DevTools/
-│   │   │   └── DevTools.tsx            
-│   │   └── index.ts                    
-│   ├── modals/                         
-│   │   ├── ImageModal.tsx              
-│   │   └── NewsModal.tsx               
-│   ├── sections/                       
-│   │   ├── AthletesSection.tsx         
-│   │   └── AdminSection.tsx            
-│   ├── Navigation.tsx                 
-│   ├── HeroSection.tsx               
-│   ├── NewsSection.tsx                 
-│   ├── SponsorsSection.tsx             
-│   ├── ContactSection.tsx            
-│   ├── Footer.tsx                      
-│   └── Logo.tsx                      
-├── content/                           
-│   ├── news/
-│   │   ├── 2025-01-10-partnership-expansion.md
-│   │   ├── 2025-02-15-championship-victory.md
-│   │   └── 2025-11-28-elite-training-program.md
-│   ├── team.yml
-│   ├── admin.yml
-│   ├── site.yml
-│   └── sponsors.yml
-├── lib/
-│   ├── content/                        
-│   │   ├── types.ts                    
-│   │   ├── loaders.ts                  
-│   │   ├── processors.ts               
-│   │   ├── siteConfig.ts               
-│   │   └── index.ts                    
-│   ├── theme/                        
-│   │   ├── detection.ts                
-│   │   ├── styles.ts                   
-│   │   ├── layout.ts                 
-│   │   └── index.ts                    
-│   ├── utils/                         
-│   │   ├── image.ts                    
-│   │   ├── profile.ts                  
-│   │   ├── formatting.ts              
-│   │   └── index.ts                    
-│   └── markdown.ts                     
-├── pages/
-│   ├── news/
-│   │   └── [slug].tsx                  
-│   ├── _app.tsx                        
-│   └── index.tsx                       
-├── public/                            
-│   └── images/
-│       ├── alumni/
-│       ├── hero/
-│       └── news/
-├── styles/                             
-│   └── globals.css
-├── config/                             
-│   └── styling.yml                     
-├── .gitignore                          
-├── .nojekyll                         
-├── LICENSE                          
-├── next.config.js                    
-├── next-env.d.ts                       
-├── package.json                       
-├── package-lock.json                   
-├── postcss.config.js                  
-├── tailwind.config.js                  
-└── tsconfig.json                       
-```
+## TODO
+- [ ] Add more team members
+- [ ] Improve documentation
+- [ ] Optimize images fallback handling
+- [ ] Optimize team/admin same member handling
 
 ## Quick Start
 
@@ -207,9 +126,94 @@ npm run deploy   # Build and deploy to GitHub Pages
 1. Add logo to `public/images/sponsors/`
 2. Update `content/sponsors.yml`
 
-## Support
 
-For questions or issues, please open a GitHub issue or contact the development team.
+## Project Structure
+
+```plaintext
+pentasus-dragon-boat/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── components/
+│   ├── common/                          
+│   │   ├── ProfileSection/
+│   │   │   ├── ProfileSection.tsx      
+│   │   │   └── ProfileCard.tsx         
+│   │   ├── SectionHeader/
+│   │   │   ├── SectionHeader.tsx       
+│   │   │   └── DecorativeShapes.tsx    
+│   │   ├── SmartImage/
+│   │   │   ├── SmartProfileImage.tsx  
+│   │   │   └── index.ts               
+│   │   ├── DevTools/
+│   │   │   └── DevTools.tsx            
+│   │   └── index.ts                    
+│   ├── modals/                         
+│   │   ├── ImageModal.tsx              
+│   │   └── NewsModal.tsx               
+│   ├── sections/                       
+│   │   ├── AthletesSection.tsx         
+│   │   └── AdminSection.tsx            
+│   ├── Navigation.tsx                 
+│   ├── HeroSection.tsx               
+│   ├── NewsSection.tsx                 
+│   ├── SponsorsSection.tsx             
+│   ├── ContactSection.tsx            
+│   ├── Footer.tsx                      
+│   └── Logo.tsx                      
+├── content/                           
+│   ├── news/
+│   │   ├── 2025-01-10-partnership-expansion.md
+│   │   ├── 2025-02-15-championship-victory.md
+│   │   └── 2025-11-28-elite-training-program.md
+│   ├── team.yml
+│   ├── admin.yml
+│   ├── site.yml
+│   └── sponsors.yml
+├── lib/
+│   ├── content/                        
+│   │   ├── types.ts                    
+│   │   ├── loaders.ts                  
+│   │   ├── processors.ts               
+│   │   ├── siteConfig.ts               
+│   │   └── index.ts                    
+│   ├── theme/                        
+│   │   ├── detection.ts                
+│   │   ├── styles.ts                   
+│   │   ├── layout.ts                 
+│   │   └── index.ts                    
+│   ├── utils/                         
+│   │   ├── image.ts                    
+│   │   ├── profile.ts                  
+│   │   ├── formatting.ts              
+│   │   └── index.ts                    
+│   └── markdown.ts                     
+├── pages/
+│   ├── news/
+│   │   └── [slug].tsx                  
+│   ├── _app.tsx                        
+│   └── index.tsx                       
+├── public/                            
+│   └── images/
+│       ├── alumni/
+│       ├── hero/
+│       └── news/
+├── styles/                             
+│   └── globals.css
+├── config/                             
+│   └── styling.yml                     
+├── .gitignore                          
+├── .nojekyll                         
+├── LICENSE                          
+├── next.config.js                    
+├── next-env.d.ts                       
+├── package.json                       
+├── package-lock.json                   
+├── postcss.config.js                  
+├── tailwind.config.js                  
+└── tsconfig.json                       
+```
+
 
 ## License
 
