@@ -1,0 +1,170 @@
+# content/site.yml - Mode Switch Demonstration
+
+
+# The website automatically switches between two modes based on this setting:
+
+site:
+  name: "PENTASUS"
+  tagline: "Champions on water, friends for life"
+  description: "United by tradition, driven by excellence. Representing the finest alumni from Fudan, Tongji, and Shanghai University of Finance and Economics."
+  logo: "/images/logo/pentasus-logo.png"
+  logoFallback: "waves"
+  favicon: "/images/logo/pentasus-logo.png"
+  wechatBlogUrl: "https://mp.weixin.qq.com/s/gFBbzG5D-1LK8yYhgCjMuw"
+  
+
+  
+  # === GLOBAL STYLE CONTROLS ===
+  globalStyle:
+    backgroundOpacity: 0.15    # Opacity for cartoon mode shapes (0.0 - 1.0)
+    borderThickness:
+      thin: 2      # For minimalist mode
+      medium: 4    # Standard cartoon mode
+      thick: 6     # Extra emphasis
+      hero: 0      # Hero section (usually no border)
+    typography:
+      primary: "font-black"     # Cartoon mode headings
+      secondary: "font-bold"    # Cartoon mode subheadings
+      body: "font-semibold"     # Cartoon mode body
+      light: "font-light"       # Minimalist mode override
+    colors:
+      accent: "blue-600"
+      success: "green-500"
+      warning: "yellow-500"
+      error: "red-500"
+
+
+  hero:
+    # OPTION A: MINIMALIST MODE (Uncomment this line)
+    backgroundImage: "/images/hero/hero.jpg"
+    
+    # OPTION B: CARTOON MODE (Uncomment this line instead)
+    # backgroundImage: ""
+    
+    # Gradient for Cartoon Mode (when no background image)
+    fallbackGradient: "from-yellow-100 via-pink-100 to-blue-100"
+    
+    # === LOGO ENHANCEMENT (Works in both modes) ===
+    logoEnhancement:
+      dropShadow: true          # Essential for visibility on any background
+      shadowIntensity: "strong" # light, medium, strong
+      shadowColor: "rgba(255, 255, 255, 1)"
+    
+    # === BACKGROUND OVERLAY (For images only) ===
+    overlay:
+      enabled: true
+      type: "gradient"          # solid, gradient, none
+      solid: "rgba(0, 0, 0, 0.2)"
+      gradient: "linear-gradient(to bottom,rgba(0,0,0,0.25), rgba(0,0,0,0.3))"
+    
+    # === TEXT OPTIMIZATION (For dark backgrounds) ===
+    textOptimization:
+      useWhiteText: true        # Switch to white text for dark images
+      addTextShadow: true       # Add shadow for better readability
+      enhanceContrast: true     # Auto-enhance contrast
+      shadowIntensity: "strong" # light, medium, strong
+      
+    # === CONTENT ===
+    title: "PENTASUS"
+    subtitle: "Champions on water, friends for life"
+    description: "United by tradition, driven by excellence."
+
+  # === SECTION CONFIGURATIONS ===
+  sections:
+    athletes:
+      maxDisplayCount: 6        # Maximum athletes per row (1-6)
+      layout: "horizontal"      # horizontal, grid
+      profileSize: "compact"    # compact, standard, large
+      showMottos: true          # Display athlete mottos
+      cardStyle: "auto"         # auto (follows mode), minimalist, cartoon
+      
+    admin:
+      maxDisplayCount: 6        # Maximum admin per row (1-6)
+      layout: "horizontal"
+      profileSize: "compact"
+      showMottos: true          # Display admin mottos
+      cardStyle: "auto"
+      
+    news:
+      featuredLayout: "hero"    # hero, card, simple
+      gridLayout: "masonry"     # grid, masonry, list
+      
+    sponsors:
+      layout: "centered"        # centered, grid, carousel
+      maxPerRow: 4
+
+
+navigation:
+  - name: "Home"
+    href: "#home"
+  - name: "Athletes"
+    href: "#athletes"
+  - name: "Admin"
+    href: "#admin"
+  - name: "News"
+    href: "#news"
+  - name: "Sponsors"
+    href: "#sponsors"
+  - name: "Contact"
+    href: "#contact"
+
+
+universities:
+  - name: "Fudan University"
+    logo: "/images/alumni/fudan.webp"
+  - name: "Tongji University"
+    logo: "/images/alumni/tongji.webp"
+  - name: "Shanghai University of Finance and Economics"
+    logo: "/images/alumni/caijin.webp"
+
+
+contact:
+  sections:
+    - title: "小红书"
+      icon: "Heart"
+      description: "小红书「波士顿Pentasus龙舟队」,了解龙舟队最新动态和精彩瞬间"
+      link: "https://www.xiaohongshu.com/user/profile/685ab82d000000001b01aaca"
+    - title: "微信公众号"
+      icon: "MessageCircle"
+      description: "扫码关注「Pentasus龙舟队」公众号, 获取第一手训练资讯和比赛信息"
+      qrCode: "/images/social/wechat.png"
+    - title: "训练时间地点"
+      icon: "MapPin"
+      description: "Fort Point Pier • 每周三、日 • 专业指导 • 欢迎新成员"
+
+
+
+# EXAMPLE 1: Professional Minimalist Look
+# hero:
+#   backgroundImage: "/images/hero/corporate-dragon-boat.jpg"
+#   textOptimization:
+#     useWhiteText: true
+#     addTextShadow: true
+#   overlay:
+#     type: "solid"
+#     solid: "rgba(0, 0, 0, 0.4)"
+
+# EXAMPLE 2: Vibrant Cartoon Energy
+# hero:
+#   backgroundImage: ""
+#   fallbackGradient: "from-yellow-200 via-pink-200 to-blue-200"
+# globalStyle:
+#   backgroundOpacity: 0.3
+#   borderThickness:
+#     medium: 6
+
+# EXAMPLE 3: Clean Minimalist with Subtle Overlay
+# hero:
+#   backgroundImage: "/images/hero/water-texture.jpg"
+#   overlay:
+#     type: "gradient"
+#     gradient: "linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.3))"
+
+# ========================================
+# 💡 QUICK REFERENCE
+# ========================================
+# Minimalist Mode: backgroundImage = "/path/to/image.jpg"
+# Cartoon Mode:    backgroundImage = ""
+# Logo Enhancement: Always keep logoEnhancement.dropShadow = true
+# Text on Dark BG: Set textOptimization.useWhiteText = true
+# Athletes Count:   sections.athletes.maxDisplayCount = 1-6

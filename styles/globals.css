@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Dynamic Styling */
+:root {
+  /* Default Border Thickness Values */
+  --border-navigation: 0px;
+  --border-hero: 2px;
+  --border-athletes: 2px;
+  --border-admin: 2px;
+  --border-news: 2px;
+  --border-sponsors: 2px;
+  --border-contact: 2px;
+  --border-footer: 2px;
+  --border-modal: 4px;
+  
+  /* Background Opacity */
+  --bg-opacity: 0.85;
+  
+  /* Mode-specific variables */
+  --hero-mode: 'cartoon'; /* cartoon | minimalist */
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dynamic Border Thickness Utilities */
+.border-dynamic-navigation {
+  border-width: var(--border-navigation);
+}
+
+.border-dynamic-hero {
+  border-width: var(--border-hero);
+}
+
+.border-dynamic-athletes {
+  border-width: var(--border-athletes);
+}
+
+.border-dynamic-admin {
+  border-width: var(--border-admin);
+}
+
+.border-dynamic-news {
+  border-width: var(--border-news);
+}
+
+.border-dynamic-sponsors {
+  border-width: var(--border-sponsors);
+}
+
+.border-dynamic-contact {
+  border-width: var(--border-contact);
+}
+
+.border-dynamic-footer {
+  border-width: var(--border-footer);
+}
+
+.border-dynamic-modal {
+  border-width: var(--border-modal);
+}
+
+/* Background Opacity Utilities */
+.bg-opacity-dynamic {
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+.bg-gradient-dynamic {
+  opacity: var(--bg-opacity);
+}
+
+/* Hero Mode Responsive Styles */
+.hero-cartoon-mode {
+  /* Enhanced cartoon styling for sections */
+}
+
+.hero-minimalist-mode {
+  /* Cleaner, minimalist styling when hero has background image */
+}
+
+.hero-minimalist-mode .section-card {
+  border-width: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.hero-minimalist-mode .section-background {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+}
+
+/* Enhanced Animation Classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s infinite;
+}
+
+@keyframes bounce-gentle {
+  0%, 20%, 53%, 80%, 100% {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -7px, 0);
+  }
+  90% {
+    transform: translate3d(0,-2px,0);
+  }
+}
+
+/* Improved Hover Effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* News Section Enhanced Styles */
+.news-card {
+  transition: all 0.3s ease;
+  border-width: var(--border-news);
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Modal Enhanced Styles */
+.modal-container {
+  border-width: var(--border-modal);
+}
+
+/* Responsive Typography */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-bounce,
+  .animate-pulse,
+  .animate-float,
+  .animate-bounce-gentle {
+    animation: none;
+  }
+  
+  .hover-lift {
+    transition: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
