@@ -72,17 +72,9 @@
   role: Engine in black
   image: "/images/family/gong.png"
   motto: "Expelliarmus!"
-  dicebear:
-    avatar: Alice
-    avatarBg: fd79a8
-    avatarEyes: 74b9ff
-    hair: long18
-    glasses: variant02
-    glassesProbability: 0
-    mouth: variant17
-    skinColor: ecad80
 
-- id: 5
+
+- id: 6
   name: 乐乐
   role: Jolly Turbo
   motto: "N/A"
@@ -97,7 +89,7 @@
     skinColor: ecad80
 
 
-- id: 6
+- id: 7
   name: Mushroom
   role: Co-Captain, Yay Turbo
   motto: ""
@@ -113,7 +105,7 @@
     clothingColor: 2563eb
 
 
-- id: 7
+- id: 8
   name: Nina
   role: Bunny-Hop Pacer
   image: "/images/admin/ryan.jpg"
@@ -128,7 +120,7 @@
     clothing: variant07
     clothingColor: 8b5cf6
   
-- id: 8
+- id: 9
   name: Yang Liu
   role: Captain, Blitz Turbo, U-Turn Steerer
   image: "/images/athletes/yang.jpg"
@@ -145,7 +137,7 @@
  
 
 
-- id: 9
+- id: 10
   name: Zhe
   role: Dr Pacer
   motto: "N/A"
@@ -159,11 +151,11 @@
     clothing: variant08
     clothingColor: 2563eb
   
-- id: 10
+- id: 11
   name: 老陆
   role: Coffee-Powered Engine
   image: "/images/admin/laolu.jpg"
-  motto: "N/A"
+  motto: "搞他"
   dicebear:
     avatar: max
     avatarBg: fd79a8
