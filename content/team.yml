@@ -24,7 +24,7 @@
 - id: 2
   name: Bowen
   role: Power Engine
-  image: "/images/admin/sophie.jpg"
+  image: ""
   dicebear:
     avatar: Bowen
     avatarBg: a29bfe
@@ -40,7 +40,7 @@
 - id: 3
   name: Cong
   role: Quantum Engine
-  image: "/images/admin/david.jpg"
+  image: ""
   motto: "N/A"
   dicebear:
     avatar: David
@@ -70,7 +70,7 @@
 - id: 5
   name: Gong
   role: Engine in black
-  image: "/images/family/gong.png"
+  image: "/images/athletes/gong.png"
   motto: "Expelliarmus!"
 
 
@@ -93,7 +93,7 @@
   name: Mushroom
   role: Co-Captain, Yay Turbo
   motto: ""
-  image: "/images/athletes/james.jpg"
+  image: ""
   dicebear:
     avatar: Nancy
     avatarBg: 81ecec
@@ -108,7 +108,7 @@
 - id: 8
   name: Nina
   role: Bunny-Hop Pacer
-  image: "/images/admin/ryan.jpg"
+  image: ""
   motto: "N/A"
   dicebear:
     avatar: Jessica
@@ -123,7 +123,7 @@
 - id: 9
   name: Yang Liu
   role: Captain, Blitz Turbo, U-Turn Steerer
-  image: "/images/athletes/yang.jpg"
+  image: ""
   motto: "么么哒"
   dicebear:
     avatar: Sawyer
@@ -154,17 +154,21 @@
 - id: 11
   name: 老陆
   role: Coffee-Powered Engine
-  image: "/images/admin/laolu.jpg"
-  motto: "搞他"
+  image: ""
+  motto: "搞"
   dicebear:
-    avatar: max
+    avatar: Caleb
     avatarBg: fd79a8
     avatarEyes: 74b9ff
-    hair: short01
+    hair: long03
+    hairColor: cb6820
+    beard: variant05
     glasses: variant05
+    clothing: variant10
     glassesProbability: 80
-    mouth: variant17
+    mouth: variant19
     skinColor: ecad80
+    backgroundColor: c0aede
 
 
 # DiceBear Fallback Options:
