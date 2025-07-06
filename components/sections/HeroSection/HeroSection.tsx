@@ -21,10 +21,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ siteData }) => {
   // Theme detection
   const themeConfig = getThemeConfig(hero.backgroundImage);
   const { isMinimalist } = themeConfig;
-  const hasBackgroundImage = hero.backgroundImage && hero.backgroundImage.trim() !== '';
+  const hasBackgroundImage = !!(hero.backgroundImage && hero.backgroundImage.trim() !== '');
 
-  // Enhanced mobile viewport and scroll handling
+  // Initialize for SSG
   useEffect(() => {
+    // If we're in SSG mode, set initial viewport height
+    if (typeof window !== 'undefined') {
+      const vh = window.innerHeight;
+      document.documentElement.style.setProperty('--vh', `${vh * 0.01}px`);
+    }
+  }, []);
+
+  // Enhanced mobile viewport and scroll handling with SSG safety
+  useEffect(() => {
+    // Skip if running on server (SSG)
+    if (typeof window === 'undefined') return;
+
     const handleResize = () => {
       // Use visual viewport API for better mobile support
       const vh = window.visualViewport?.height || window.innerHeight;
@@ -124,11 +136,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ siteData }) => {
         />
       </div>
 
-      {/* Global Styles for Mobile Optimization */}
+      {/* Global Styles for Mobile Optimization with SSG Safety */}
       <style jsx global>{`
         /* Custom CSS properties for mobile viewport */
         :root {
-          --vh: 1vh;
+          --vh: 1vh; /* Fallback for SSG */
         }
         
         /* Support for iPhone X+ safe areas */

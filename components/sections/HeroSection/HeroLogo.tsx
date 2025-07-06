@@ -18,7 +18,12 @@ export const HeroLogo: React.FC<HeroLogoProps> = ({
       ? "hover:scale-105 active:scale-95 hover:rotate-1" 
       : "hover:scale-105 active:scale-95 hover:rotate-2";
     
-    return `${baseClasses} ${hoverEffects}`;
+    // Add white shadow for dark backgrounds
+    const shadowClasses = hasBackgroundImage 
+      ? "drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] drop-shadow-[0_0_40px_rgba(255,255,255,0.6)]"
+      : "";
+    
+    return `${baseClasses} ${hoverEffects} ${shadowClasses}`;
   };
 
   // Determine background type for logo enhancement
@@ -41,6 +46,11 @@ export const HeroLogo: React.FC<HeroLogoProps> = ({
         className={getLogoClasses()}
         enhancedVisibility={hasBackgroundImage}
         backgroundType={getBackgroundType()}
+        style={{
+          filter: hasBackgroundImage 
+            ? 'drop-shadow(0 0 20px rgba(255,255,255,0.1)) drop-shadow(0 0 40px rgba(255,255,255,0.7)) drop-shadow(0 4px 12px rgba(0,0,0,0.3))'
+            : undefined
+        }}
       />
 
       {/* Logo Animation Styles */}
