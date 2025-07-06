@@ -1,4 +1,4 @@
-// components/sections/HeroSection/HeroLogo.tsx - Enhanced Logo Component
+// components/sections/HeroSection/HeroLogo.tsx
 import React from 'react';
 import Logo from '../Logo';
 
