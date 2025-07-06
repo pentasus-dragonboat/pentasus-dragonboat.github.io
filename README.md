@@ -2,6 +2,7 @@
 
 
 ## TODO
+- [x] Modularize components
 - [ ] Add more team members
 - [ ] Improve documentation
 - [ ] Optimize images fallback handling
