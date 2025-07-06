@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Navigation from '@/components/sections/Navigation';
-import HeroSection from '@/components/sections/HeroSection';
+import HeroSection from '@/components/sections/HeroSection/HeroSection';
 import AthletesSection from '@/components/sections/AthletesSection';
 import AdminSection from '@/components/sections/AdminSection';
 import NewsSection from '@/components/sections/NewsSection';
