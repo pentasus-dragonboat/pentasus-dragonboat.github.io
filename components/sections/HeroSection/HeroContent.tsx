@@ -70,7 +70,7 @@ export const HeroContent: React.FC<HeroContentProps> = ({
   };
 
   const getDescriptionClasses = () => {
-    const baseClasses = "tracking-wide leading-relaxed transition-all duration-500 mb-16 sm:mb-20 md:mb-24 lg:mb-32 max-w-2xl lg:max-w-3xl mx-auto";
+    const baseClasses = "tracking-wide leading-relaxed transition-all duration-500 mb-16 sm:mb-20 md:mb-24 lg:mb-28 max-w-2xl lg:max-w-3xl mx-auto";
     const responsiveSize = "text-base sm:text-lg md:text-xl";
     
     return `${baseClasses} ${responsiveSize} ${textStyles.description}`;

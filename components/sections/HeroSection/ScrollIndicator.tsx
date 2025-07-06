@@ -15,8 +15,11 @@ export const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({
   textShadowStyle,
   isLoaded
 }) => {
-  // Handle scroll to next section with smooth behavior
+  // Handle scroll to next section with smooth behavior and SSG safety
   const handleScrollToContent = () => {
+    // Skip if running on server (SSG)
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+    
     const nextSection = document.querySelector('#athletes, #admin, #news') as HTMLElement;
     if (nextSection) {
       nextSection.scrollIntoView({ 

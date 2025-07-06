@@ -21,12 +21,23 @@ export const HeroBackground: React.FC<HeroBackgroundProps> = ({
   
   const hasBackgroundImage = hero.backgroundImage && hero.backgroundImage.trim() !== '';
   
-  // Handle image loading
+  // Handle image loading with SSG safety
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      // SSG mode - just mark as loaded
+      setIsLoaded(true);
+      onLoadComplete?.();
+      return;
+    }
+
     if (hasBackgroundImage) {
-      const img = new window.Image();
+      const img = new (window.Image as { new (): HTMLImageElement })(); // Use global Image with type annotation
       img.onload = () => {
         setIsLoaded(true);
+        onLoadComplete?.();
+      };
+      img.onerror = () => {
+        setIsLoaded(true); // Mark as loaded even on error
         onLoadComplete?.();
       };
       img.src = getImagePath(hero.backgroundImage);
