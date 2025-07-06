@@ -114,13 +114,36 @@
     avatar: Jessica
     avatarBg: a29bfe
     avatarEyes: 00cec9
-    hair: long20
+    hair: long13
     glasses: variant03
     glassesProbability: 0
     clothing: variant07
-    clothingColor: 8b5cf6
-  
+    skinColor: ecad80
+
 - id: 9
+  name: Niuniu
+  role: Drummer, steerer, rocket
+  image: "/images/athletes/niuniu.svg"
+  motto: "Master of Rhythm and Reins"
+ 
+- id: 10
+  name: 小阳人
+  role: Engine, Rocket, Steerer
+  image: ""
+  motto: "咩"
+  dicebear:
+    avatar: mie
+    avatarBg: fd79a8
+    avatarEyes: 74b9ff
+    hair: long05
+    accessories: variant01
+    accessoriesProbability: 80
+    clothing: variant08
+    clothingColor: 2563eb
+    skinColor: ecad80
+    
+  
+- id: 10
   name: Yang Liu
   role: Captain, Blitz Turbo, U-Turn Steerer
   image: ""
@@ -136,8 +159,7 @@
     skinColor: ecad80
  
 
-
-- id: 10
+- id: 11
   name: Zhe
   role: Dr Pacer
   motto: "N/A"
@@ -151,7 +173,7 @@
     clothing: variant08
     clothingColor: 2563eb
   
-- id: 11
+- id: 12
   name: 老陆
   role: Coffee-Powered Engine
   image: ""
