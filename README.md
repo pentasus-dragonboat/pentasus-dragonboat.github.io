@@ -218,5 +218,5 @@ pentasus-dragon-boat/
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - [LICENSE](LICENSE)
 
