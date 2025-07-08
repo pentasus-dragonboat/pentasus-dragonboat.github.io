@@ -161,7 +161,7 @@ contact:
 #     gradient: "linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,0,0,0.3))"
 
 # ========================================
-# 💡 QUICK REFERENCE
+# QUICK REFERENCE
 # ========================================
 # Minimalist Mode: backgroundImage = "/path/to/image.jpg"
 # Cartoon Mode:    backgroundImage = ""

@@ -112,18 +112,18 @@
 
 - id: 8
   name: Nina
-  role: Logistics Coordinator
+  role: Bunny-Hop Pacer
   image: ""
   motto: "N/A"
   dicebear:
     avatar: Jessica
     avatarBg: a29bfe
     avatarEyes: 00cec9
-    hair: long20
+    hair: long13
     glasses: variant03
     glassesProbability: 0
     clothing: variant07
-    clothingColor: 8b5cf6
+    skinColor: ecad80
   
 
 - id: 9
@@ -144,7 +144,7 @@
 - id: 11
   name: 老陆
   role: Where-am-I Member
-  image: ""
+  image: "/images/athletes/lu.png"
   motto: "搞"
   dicebear:
     avatar: Caleb

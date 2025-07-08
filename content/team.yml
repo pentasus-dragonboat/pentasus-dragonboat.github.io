@@ -129,7 +129,7 @@
 - id: 10
   name: 小阳人
   role: Engine, Rocket, Steerer
-  image: ""
+  image: "/images/athletes/xiaoyang.png"
   motto: "咩"
   dicebear:
     avatar: mie
@@ -176,7 +176,7 @@
 - id: 12
   name: 老陆
   role: Coffee-Powered Engine
-  image: ""
+  image: "/images/athletes/lu.webp"
   motto: "搞"
   dicebear:
     avatar: Caleb
