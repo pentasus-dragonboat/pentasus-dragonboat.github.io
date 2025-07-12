@@ -73,6 +73,12 @@
   image: "/images/athletes/gongjiaolian.png"
   motto: "Expelliarmus!"
 
+- id: 5
+  name: Izzy
+  role: Versatile Right Side Paddler
+  motto: "嫣然一笑☀️😘"
+  image: "/images/athletes/izzy.svg"
+
 
 - id: 6
   name: 乐乐
@@ -160,9 +166,9 @@
  
 
 - id: 11
-  name: Zhe
+  name: 李导
   role: Dr Pacer
-  motto: "N/A"
+  motto: "uhaaaaaaahhh"
   dicebear:
     avatar: Emmily
     avatarBg: fd79a8
