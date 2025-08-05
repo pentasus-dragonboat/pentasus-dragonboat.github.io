@@ -141,21 +141,21 @@
     clothingColor: 2563eb
   
 
-- id: 11
-  name: 老陆
-  role: Where-am-I Member
-  image: "/images/athletes/lu.png"
-  motto: "搞"
-  dicebear:
-    avatar: Caleb
-    avatarBg: fd79a8
-    avatarEyes: 74b9ff
-    hair: long03
-    hairColor: cb6820
-    beard: variant05
-    glasses: variant05
-    clothing: variant10
-    glassesProbability: 80
-    mouth: variant19
-    skinColor: ecad80
-    backgroundColor: c0aede
+# - id: 11
+#   name: 老陆
+#   role: Where-am-I Member
+#   image: "/images/athletes/lu.png"
+#   motto: "搞"
+#   dicebear:
+#     avatar: Caleb
+#     avatarBg: fd79a8
+#     avatarEyes: 74b9ff
+#     hair: long03
+#     hairColor: cb6820
+#     beard: variant05
+#     glasses: variant05
+#     clothing: variant10
+#     glassesProbability: 80
+#     mouth: variant19
+#     skinColor: ecad80
+#     backgroundColor: c0aede

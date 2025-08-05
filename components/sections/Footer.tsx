@@ -64,7 +64,7 @@ const Footer: React.FC<FooterProps> = ({ siteData }) => {
         </div>
         
         <div className="text-center text-gray-500 font-semibold text-sm tracking-wide">
-          <p>© 2025 {siteName} Dragon Boat Team. Made with <span className="text-red-500 animate-pulse">♥</span></p>
+          <p>© 2025 {siteName} Dragon Boat Team. Made with <span className="text-red-500 animate-pulse">♥</span> by Zhenyuan Lu</p>
         </div>
       </div>
     </footer>

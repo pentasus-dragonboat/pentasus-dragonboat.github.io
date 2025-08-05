@@ -10,7 +10,7 @@
 - id: 1
   name: Annie
   role: Agile Pacer
-  motto: "N/A"
+  motto: ""
   dicebear:
     avatar: Lily
     avatarBg: fd79a8
@@ -34,14 +34,14 @@
     glassesProbability: 80
     mouth: variant17
     skinColor: ecad80
-  motto: "N/A"
+  motto: ""
 
 
 - id: 3
   name: Cong
   role: Quantum Engine
   image: ""
-  motto: "N/A"
+  motto: ""
   dicebear:
     avatar: David
     avatarBg: 55a3ff
@@ -56,7 +56,7 @@
 - id: 4
   name: 桂桂
   role: Happy-Go-Lucky Pacer
-  motto: "N/A"
+  motto: ""
   dicebear:
     avatar: Alice
     avatarBg: fd79a8
@@ -83,7 +83,7 @@
 - id: 6
   name: 乐乐
   role: Jolly Turbo
-  motto: "N/A"
+  motto: ""
   dicebear:
     avatar: happy
     avatarBg: fd79a8
@@ -115,7 +115,7 @@
   name: Nina
   role: Bunny-Hop Pacer
   image: ""
-  motto: "N/A"
+  motto: ""
   dicebear:
     avatar: Jessica
     avatarBg: a29bfe
@@ -183,7 +183,7 @@
   name: 老陆
   role: Coffee-Powered Engine
   image: "/images/athletes/lu.webp"
-  motto: "搞"
+  motto: "flirt with life"
   dicebear:
     avatar: Caleb
     avatarBg: fd79a8
