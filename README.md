@@ -215,6 +215,8 @@ pentasus-dragon-boat/
 └── tsconfig.json                       
 ```
 
+## Contributing
+Zhenyuan Lu, [@zhenyuanlu](https://github.com/zhenyuanlu)
 
 ## License
 
