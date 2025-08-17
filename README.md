@@ -216,7 +216,7 @@ pentasus-dragon-boat/
 ```
 
 ## Contributing
-Zhenyuan Lu, [@zhenyuanlu](https://github.com/zhenyuanlu)
+[@zhenyuanlu](https://github.com/zhenyuanlu)
 
 ## License
 
