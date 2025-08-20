@@ -36,7 +36,7 @@ site:
 
   hero:
     # OPTION A: MINIMALIST MODE (Uncomment this line)
-    backgroundImage: "/images/hero/hero.jpg"
+    backgroundImage: "/images/news/8_16_1.jpg"
     
     # OPTION B: CARTOON MODE (Uncomment this line instead)
     # backgroundImage: ""
@@ -44,6 +44,16 @@ site:
     # Gradient for Cartoon Mode (when no background image)
     fallbackGradient: "from-yellow-100 via-pink-100 to-blue-100"
     
+    carousel:
+      autoPlay: true          # Auto-advance through media
+      imageDuration: 3        # Seconds per image
+      pauseOnHover: false     # Pause when hovering
+      media:                  # Additional media for carousel
+        - "8_16_hartford.mp4"  # Videos can be just filename
+        - "/images/news/8_16_2.jpg"
+        - "/images/news/8_16_3.jpg"
+        - "/images/hero/hero.jpg"
+
     # === LOGO ENHANCEMENT (Works in both modes) ===
     logoEnhancement:
       dropShadow: true          # Essential for visibility on any background
@@ -55,7 +65,7 @@ site:
       enabled: true
       type: "gradient"          # solid, gradient, none
       solid: "rgba(0, 0, 0, 0.2)"
-      gradient: "linear-gradient(to bottom,rgba(0,0,0,0.25), rgba(0,0,0,0.3))"
+      gradient: "linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0.2))"
     
     # === TEXT OPTIMIZATION (For dark backgrounds) ===
     textOptimization:

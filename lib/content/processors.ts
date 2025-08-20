@@ -76,11 +76,31 @@ export function processNewsItem(
     images: processedImages.length > 0 ? processedImages : ['/images/news/placeholder.jpg'],
     excerpt,
     readingTime,
+    heroMedia: 'image', // Default to image if no video
+    video: null, // Default to null if no video provided
+    carousel: null, // Default to null if no carousel provided
   };
 
   // Only add author if it exists (avoid undefined serialization issues)
   if (data.author) {
     newsItem.author = data.author;
+  }
+
+  // FIXED: Only add video field if it exists
+  if (data.video) {
+    newsItem.video = `/video/${data.video}`;
+    newsItem.heroMedia = data.heroMedia || 'video';
+  } else if (data.heroMedia) {
+    newsItem.heroMedia = data.heroMedia;
+  }
+
+  // Add carousel configuration if present
+  if (data.carousel) {
+    newsItem.carousel = {
+      autoPlay: data.carousel.autoPlay !== false,
+      imageDuration: data.carousel.imageDuration || 5,
+      pauseOnHover: data.carousel.pauseOnHover !== false
+    };
   }
 
   return newsItem;
