@@ -46,7 +46,7 @@ export interface ContactSection {
 }
 
 export interface HeroConfig {
-  backgroundImage: string;
+  backgroundImage: string;  // Can be image path or video path (mp4, webm, mov)
   fallbackGradient: string;
   logoEnhancement: {
     dropShadow: boolean;
@@ -68,6 +68,12 @@ export interface HeroConfig {
   title: string;
   subtitle: string;
   description: string;
+  carousel?: {
+    autoPlay?: boolean;
+    imageDuration?: number;
+    pauseOnHover?: boolean;
+    media?: Array<string | { type: 'video' | 'image'; src: string }>;
+  };
 }
 
 export interface SiteConfig {

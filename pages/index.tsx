@@ -1,4 +1,4 @@
-// pages/index.tsx - Updated to Remove Modal Dependencies
+// pages/index.tsx - Complete Updated File with Carousel
 import React, { useState, useEffect } from 'react';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
@@ -35,7 +35,6 @@ export default function Home({ news, teamMembers, adminTeam, sponsors, siteData 
 
   const { site } = siteData;
   
-  // Get unified theme configuration for all sections
   const themeConfig = getThemeConfig(site.hero.backgroundImage);
   const { isMinimalist } = themeConfig;
 
@@ -47,7 +46,6 @@ export default function Home({ news, teamMembers, adminTeam, sponsors, siteData 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href={site.favicon} />
         
-        {/* Enhanced Open Graph / Social Media Meta Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`${site.name} - ${site.tagline}`} />
         <meta property="og:description" content={site.description} />
@@ -55,23 +53,19 @@ export default function Home({ news, teamMembers, adminTeam, sponsors, siteData 
         <meta property="og:image" content={site.logo} />
         <meta property="og:url" content="https://pentasus.dragonboat.team" />
         
-        {/* Enhanced Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${site.name} - ${site.tagline}`} />
         <meta name="twitter:description" content={site.description} />
         <meta name="twitter:image" content={site.logo} />
         
-        {/* Additional SEO Meta Tags */}
         <meta name="keywords" content="dragon boat, rowing, sports team, pentasus, competition, training" />
         <meta name="author" content={site.name} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://pentasus.dragonboat.team" />
         
-        {/* Performance and Accessibility */}
         <meta name="theme-color" content="#ffffff" />
         <meta name="color-scheme" content="light" />
         
-        {/* JSON-LD Structured Data for Better SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -94,44 +88,44 @@ export default function Home({ news, teamMembers, adminTeam, sponsors, siteData 
       </Head>
       
       <div className="min-h-screen bg-white">
-        {/* Navigation - Enhanced with site data */}
+        {/* Navigation */}
         <Navigation siteData={siteData} />
         
-        {/* Hero Section - Already has theme detection built-in */}
+        {/* Hero Section */}
         <HeroSection siteData={siteData} />
         
-        {/* Athletes Section - Enhanced with unified theming */}
+        {/* Athletes Section */}
         <AthletesSection 
           teamMembers={teamMembers} 
           siteData={siteData} 
         />
         
-        {/* Admin Section - Enhanced with unified theming */}
+        {/* Admin Section */}
         <AdminSection 
           adminTeam={adminTeam} 
           siteData={siteData} 
         />
         
-        {/* News Section - Now navigates to dedicated pages, no modals */}
+        {/* News Section */}
         <NewsSection 
           news={news} 
           isMinimalist={isMinimalist}
         />
         
-        {/* Sponsors Section - Enhanced with unified theming */}
+        {/* Sponsors Section */}
         <SponsorsSection 
           sponsors={sponsors}
           isMinimalist={isMinimalist}
         />
         
-        {/* Contact Section - Enhanced with unified theming */}
+        {/* Contact Section */}
         <ContactSection 
           contactData={siteData.contact} 
           siteConfig={site}
           isMinimalist={isMinimalist}
         />
         
-        {/* Footer - Enhanced with site data */}
+        {/* Footer */}
         <Footer siteData={siteData} />
       </div>
 
@@ -143,7 +137,7 @@ export default function Home({ news, teamMembers, adminTeam, sponsors, siteData 
               ? 'bg-blue-50 text-blue-700 border-blue-200' 
               : 'bg-yellow-200 text-black border-black'
           }`}>
-            {isMinimalist ? 'Minimalist Mode' : 'Cartoon Mode'} | Enhanced News
+            {isMinimalist ? 'Minimalist Mode' : 'Cartoon Mode'} | Hero Carousel
           </div>
         </div>
       )}
@@ -180,7 +174,6 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   } catch (error) {
     console.error('Error loading site data:', error);
     
-    // Return graceful fallback data
     const fallbackSiteData = getSiteConfig();
     
     return {

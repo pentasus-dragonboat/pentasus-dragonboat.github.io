@@ -43,6 +43,16 @@ export function getSiteConfig(): SiteData {
       description: rawData.site?.hero?.description || "United by tradition, driven by excellence.",
     };
 
+    // Add carousel configuration if present
+    if (rawData.site?.hero?.carousel) {
+      heroConfig.carousel = {
+        autoPlay: rawData.site.hero.carousel.autoPlay !== false,
+        imageDuration: rawData.site.hero.carousel.imageDuration || 5,
+        pauseOnHover: rawData.site.hero.carousel.pauseOnHover !== false,
+        media: rawData.site.hero.carousel.media || []
+      };
+    }
+
     const siteConfig: SiteConfig = {
       name: rawData.site?.name || "PENTASUS",
       tagline: rawData.site?.tagline || "Champions on water, friends for life",
