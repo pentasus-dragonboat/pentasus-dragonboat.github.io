@@ -13,6 +13,14 @@ export interface NewsItem {
   excerpt?: string;
   readingTime?: number;
   author?: string;
+
+  video?: string | null;
+  heroMedia?: 'video' | 'image';
+  carousel?: {
+    autoPlay?: boolean;
+    imageDuration?: number;
+    pauseOnHover?: boolean;
+  };
 }
 
 export interface TeamMember {

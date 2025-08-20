@@ -76,9 +76,6 @@ export function processNewsItem(
     images: processedImages.length > 0 ? processedImages : ['/images/news/placeholder.jpg'],
     excerpt,
     readingTime,
-    heroMedia: 'image', // Default to image if no video
-    video: null, // Default to null if no video provided
-    carousel: null, // Default to null if no carousel provided
   };
 
   // Only add author if it exists (avoid undefined serialization issues)
